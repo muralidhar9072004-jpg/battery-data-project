@@ -1,0 +1,6 @@
+Station,SOC,Health,Status
+BLR01,78,95,Active
+BLR02,52,84,Active
+BLR03,91,98,Active
+BLR04,61,88,Maintenance
+BLR05,45,79,Active
