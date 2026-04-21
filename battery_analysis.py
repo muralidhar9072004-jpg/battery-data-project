@@ -11,7 +11,7 @@ data = {
 # Create DataFrame
 df = pd.DataFrame(data)
 
-print("🔋 Battery Station Performance Report")
+print(" Battery Station Performance Report")
 print(df)
 
 # Average SOC
@@ -20,15 +20,15 @@ print(f"\nAverage SOC: {avg_soc:.2f}%")
 
 # Low SOC stations
 low_soc = df[df["SOC"] < 60]
-print("\n⚠️ Low SOC Stations:")
+print("\n Low SOC Stations:")
 print(low_soc[["Station", "SOC"]])
 
 # Weak health batteries
 weak_health = df[df["Health"] < 85]
-print("\n🛠️ Batteries Needing Attention:")
+print("\n Batteries Needing Attention:")
 print(weak_health[["Station", "Health"]])
 
 # Save report
 df.to_csv("battery_report.csv", index=False)
 
-print("\n✅ Report saved as battery_report.csv")
+print("\n Report saved as battery_report.csv")
